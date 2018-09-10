@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "name": "Bugs Bunny",
+    "image": "./assets/images/bugsbunny.png",
+    "clicked": false
+  },
+  {
+    "id": 2,
+    "name": "Daffy Duck",
+    "image": "./assets/images/daffyduck.png",
+    "clicked": false
+  },
+  {
+    "id": 3,
+    "name": "Elmer Fudd",
+    "image": "./assets/images/elmerfudd.jpg",
+    "clicked": false
+  },
+  {
+    "id": 4,
+    "name": "Gossamer",
+    "image": "./assets/images/gossamer.jpg",
+    "clicked": false
+  },
+  {
+    "id": 5,
+    "name": "Pepe Le Pew",
+    "image": "./assets/images/pepelepew.jpg",
+    "clicked": false
+  }
+]

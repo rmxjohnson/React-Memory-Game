@@ -1,0 +1,76 @@
+[
+  {
+    "id": 1,
+    "name": "Bugs Bunny",
+    "image": "./assets/images/bugsbunny.png",
+    "clicked": false
+  },
+  {
+    "id": 2,
+    "name": "Daffy Duck",
+    "image": "./assets/images/daffyduck.png",
+    "clicked": false
+  },
+  {
+    "id": 3,
+    "name": "Elmer Fudd",
+    "image": "./assets/images/elmerfudd.jpg",
+    "clicked": false
+  },
+  {
+    "id": 4,
+    "name": "Gossamer",
+    "image": "./assets/images/gossamer.jpg",
+    "clicked": false
+  },
+  {
+    "id": 5,
+    "name": "Pepe Le Pew",
+    "image": "./assets/images/pepelepew.jpg",
+    "clicked": false
+  },
+  {
+    "id": 6,
+    "name": "Porky Pig",
+    "image": "./assets/images/porkypig.jpg",
+    "clicked": false
+  },
+  {
+    "id": 7,
+    "name": "Road Runner",
+    "image": "./assets/images/roadrunner.jpg",
+    "clicked": false
+  },
+  {
+    "id": 8,
+    "name": "Speedy Gonzales",
+    "image": "./assets/images/speedygonzales.jpg",
+    "clicked": false
+  },
+  {
+    "id": 9,
+    "name": "Tasmanian Devil",
+    "image": "./assets/images/tasmaniandevil.jpg",
+    "clicked": false
+  },
+  {
+    "id": 10,
+    "name": "Tweety Bird",
+    "image": "./assets/images/tweety.png",
+    "clicked": false
+  },
+  {
+    "id": 11,
+    "name": "Wile E. Coyote",
+    "image": "./assets/images/wileecoyote.jpg",
+    "occupation": "Superhero",
+    "location": "Earth",
+    "clicked": false
+  },
+  {
+    "id": 12,
+    "name": "Yosemite Sam",
+    "image": "./assets/images/yosemitesam.jpg",
+    "clicked": false
+  }
+]
