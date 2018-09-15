@@ -3,28 +3,32 @@ import "./Title.css";
 
 const Title = props =>
     (
-        <div>
-            <div className='container'>
+        <div id='title-heading'>
+            <div className="jumbotron jumbotron-fluid">
+
                 <nav className='navbar'>
                     <ul>
                         <li className='brand link'>
-                            <h3><a href="/"> {props.children}</a></h3>
+                            <h1><a href="/"> {props.children}</a></h1>
                         </li>
-                        <li id="message"><h3>{props.message}</h3></li>
+                        {/* "Game Over" message will be in orange, all other messages will be in white */}
+                        <li id="message" style={{ color: props.message.startsWith("Game") ? "orange" : "white" }}><h3>{props.message}</h3></li>
                         <li id="scores">
-                            <h3>Score: {props.score} | High Score: {props.high}</h3>
+                            <h3>Current Score: {props.score}</h3>
+                            <h3>High Score: {props.high}</h3>
                         </li>
                     </ul>
                 </nav>
             </div>
 
+            {/* dynamic message that will change throughout the game */}
             <div className='container'>
                 <header className="header">
-                    <h1> {props.children}</h1>
-                    <h2>Click on an image to earn points, but don't click any image more then once!</h2>
+                    <h2 id="directions">Click on an image to earn points, but don't click any image more than once!</h2>
                 </header>
 
             </div>
-        </div>)
+        </div>
+    )
 
 export default Title;

@@ -63,14 +63,48 @@
     "id": 11,
     "name": "Wile E. Coyote",
     "image": "./assets/images/wileecoyote.jpg",
-    "occupation": "Superhero",
-    "location": "Earth",
     "clicked": false
   },
   {
     "id": 12,
     "name": "Yosemite Sam",
     "image": "./assets/images/yosemitesam.jpg",
+    "clicked": false
+  },
+  {
+    "id": 13,
+    "name": "Granny",
+    "image": "./assets/images/granny.png",
+    "clicked": false
+  },
+  {
+    "id": 14,
+    "name": "Foghorn Leghorn",
+    "image": "./assets/images/foghornleghorn.jpg",
+    "clicked": false
+  },
+  {
+    "id": 15,
+    "name": "Marvin the Martian",
+    "image": "./assets/images/marvinmartian.png",
+    "clicked": false
+  },
+  {
+    "id": 16,
+    "name": "Sylvester",
+    "image": "./assets/images/sylvester.png",
+    "clicked": false
+  },
+  {
+    "id": 17,
+    "name": "Miss Prissy",
+    "image": "./assets/images/prissy.jpg",
+    "clicked": false
+  },
+  {
+    "id": 18,
+    "name": "Eggbert",
+    "image": "./assets/images/eggbert.jpg",
     "clicked": false
   }
 ]

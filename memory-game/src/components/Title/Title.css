@@ -1,5 +1,14 @@
-*{
-  box-sizing: border-box;
+
+.jumbotron{
+  padding-bottom: 0;
+  padding-top: 0;
+  margin-bottom: 0px;
+  top: 0; 
+  position: fixed; 
+  left: 0;
+  right: 0;
+  width: 100%; 
+  z-index: 99;
 }
 
 .title {
@@ -11,38 +20,57 @@
   margin-bottom: 50px;
 }
 
+a, a:hover{
+  color: whitesmoke;
+}
+
 .navbar {
-  background: rgb(238, 215, 8);
+  background: rgb(23, 8, 238);
   min-height: 60px;
-  /* position: fixed; */
   width: 100%;
   z-index: 99;
-  white-space: nowrap;
   border: solid 3px darkgray;
 }
 
 .navbar li {
  display: inline-block;
  padding: 15px 0 15px 0; 
- /* width: 33.3%;  */
+  width: 33.3%;  
  text-align: center;
- border: solid 5px purple;
  margin: auto;
+ color: white;
 }
 
 ul{
   width: 100%;
 }
 
-#message{
-  width: 50%;
-}
-
-#scores, #link{
-  width: 25%;
-}
-
-h1, h2{
+#directtions, header {
   text-align: center;
-  border: solid 5px green;
+  min-height: 150px;
 }
+
+#title-heading{
+  width: 100%;
+}
+
+@media screen and (max-width:980px){
+  #directtions, header {
+    text-align: center;
+    min-height: 150px;
+  }
+}
+@media screen and (max-width:768px){
+  #directtions, header {
+    text-align: center;
+    min-height: 250px;
+  }
+}
+
+@media screen and (max-width:640px){
+  #directtions, header {
+    text-align: center;
+    min-height: 300px;
+  }
+}
+    
