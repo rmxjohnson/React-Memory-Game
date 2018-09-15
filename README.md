@@ -22,6 +22,8 @@ https://github.com/rmxjohnson/React-Memory-Game.git
 
 ![home.png](public/assets/images/home-page.png)
 
+![saved.png](public/assets/images/prissy.jpg)
+
 
 # Additional Features
  * The header message changes based on the user's actions.  When the game is over, the message is displayed in orange.
