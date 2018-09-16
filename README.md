@@ -20,7 +20,7 @@ https://github.com/rmxjohnson/React-Memory-Game.git
 
 ## Home Page
 
-![home.png](memory-game/public/assets/images/home-page.png)
+![home.png](public/assets/images/home-page.png)
 
 
 # Additional Features

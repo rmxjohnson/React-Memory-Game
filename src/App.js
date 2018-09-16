@@ -20,69 +20,86 @@ class App extends Component {
   // function when a card is clicked
   clickFriend = id => {
     var index;
+    var tempArray;
     // find the array index of the clicked character
-    index = this.state.friends.findIndex(friend => friend.id == id);
+    index = this.state.friends.findIndex(friend => friend.id === id);
 
     // logic when card has already been clicked 
     if (this.state.friends[index].clicked) {
       var currentName = this.state.friends[index].name;
 
-      // reset the current score to 0
-      this.state.currentScore = 0;
-
-      // set the header message
-      this.state.currentMessage = `Game Over!!   You already clicked ${currentName}. The game will restart.`;
-
       // reset status of all clicked values to "false"
-      this.state.friends.forEach(function (element) {
+      tempArray = this.state.friends.map((element) => {
         element.clicked = false;
-      });
+        return element;
+      })
 
       // resort the array to display in a random order
-      friends.sort(function () { return 0.5 - Math.random() });
+      tempArray.sort(function () { return 0.5 - Math.random() });
 
-      // Set this.state.friends equal to the new friends array
-      this.setState({ friends: friends });
+      // reset the current score to 0
+      // set the header message
+      // Set this.state.friends equal to the tempArray
+      this.setState({
+        friends: tempArray,
+        currentScore: 0,
+        currentMessage: `Game Over!!   You already clicked ${currentName}. Click an image to restart.`
+      });
     }
 
     // logic when new card has been clicked
     else {
-      // set the header message
-      this.state.currentMessage = `Great Job!!  
-      You scored 1 more point.`
+
       //set the friend status to "clicked"
-      this.state.friends[index].clicked = true;
+      let newState = Object.assign({}, this.state);
+      newState.friends[index].clicked = true;
+      // set the header message
+      // Set this.state.friends equal to the newState
+      this.setState({
+        friends: newState,
+        currentMessage: `Great Job!!  You scored 1 more point.`
+      });
 
       // increment the current score
       this.setState({ currentScore: this.state.currentScore + 1 }, function () {
         // determine if this is the new high score
         if (this.state.currentScore > this.state.highScore) {
-          this.state.highScore = this.state.currentScore;
-          this.setState({ highScore: this.state.highScore });
+          this.setState({ highScore: this.state.currentScore });
         }
         // logic if all cards have been selected
-        if (this.state.currentScore == this.state.friends.length) {
-          // set the header message
-          this.state.currentMessage = "WINNER!! You clicked on every character.  The game will restart."
-          // reset the current score
-          this.state.currentScore = 0;
+        if (this.state.currentScore === this.state.friends.length) {
+
 
           // reset the status of all clicked values to false
-          this.state.friends.forEach(function (element) {
+          tempArray = this.state.friends.map((element) => {
             element.clicked = false;
+            return element;
+          })
+
+          // resort the array to display in a random order
+          tempArray.sort(function () { return 0.5 - Math.random() });
+
+          // set the header message
+          // Set this.state.friends equal to the tempArray
+          this.setState({
+            friends: tempArray,
+            currentScore: 0,
+            currentMessage: "WINNER!! You clicked on every character.  Click an image to restart."
           });
         }
       });
 
+
       // resort the array to display in a random order
       friends.sort(function () { return 0.5 - Math.random() });
       // Set this.state.friends equal to the new friends array
-      this.setState({ friends: friends });
+      this.setState({ friends });
     }
   };
 
   // Map over this.state.friends and render a FriendCard component for each friend object
   render() {
+    // console.log(this.state.friends);
     return (
       <Wrapper>
 
@@ -101,7 +118,6 @@ class App extends Component {
             />
           ))}
         </section>
-
 
       </Wrapper>
     );
