@@ -12,7 +12,7 @@ React is used to create the Memory Game.  The application's UI is broken up into
 The application keeps track of the user's score and the high score.  The score is incremented when clicking an image for the 1st time.  The score resets to 0 if the user clicks an image more than once.  Once the user's score is reset after an incorrect guess, the game will restart.
 
 # Link to deployed project
-https://mongoscraper199.herokuapp.com/
+https://react-memory-game199.herokuapp.com/
 
 # Links to GitHub
 https://github.com/rmxjohnson/React-Memory-Game.git
