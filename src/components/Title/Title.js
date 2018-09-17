@@ -11,8 +11,10 @@ const Title = props =>
                         <li className='brand link'>
                             <h1><a href="/"> {props.children}</a></h1>
                         </li>
-                        {/* "Game Over" message will be in orange, all other messages will be in white */}
-                        <li id="message" style={{ color: props.message.startsWith("Game") ? "orange" : "white" }}><h3>{props.message}</h3></li>
+                        {/* "Game Over" or "WINNER" message will be in orange, all other messages will be in white */}
+                        <li id="message"
+                            style={{ color: (props.message.startsWith("Game") || props.message.startsWith("WIN")) ? "orange" : "white" }}>
+                            <h3>{props.message}</h3></li>
                         <li id="scores">
                             <h3>Current Score: {props.score}</h3>
                             <h3>High Score: {props.high}</h3>
